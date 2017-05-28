@@ -1,2 +1,5 @@
-# rainbow-road
-React.js
+# Practice site
+
+## Technologies
+* React.js
+
