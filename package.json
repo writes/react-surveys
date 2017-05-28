@@ -1,0 +1,19 @@
+{
+  "name": "rainbow-road",
+  "version": "1.0.0",
+  "description": "App by writes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/writes/rainbow-road.git"
+  },
+  "author": "Jonathon Thompson (writes)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/writes/rainbow-road/issues"
+  },
+  "homepage": "https://github.com/writes/rainbow-road#readme"
+}
