@@ -1,5 +1,6 @@
-# Practice site
-## Technologies
-* React.js
+# writes-io
 
-## [React Notes](notes/1-intro.md)
+## About me
+
+Jonathon Thompson
+Web Developer
