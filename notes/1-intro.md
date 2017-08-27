@@ -1,12 +1,10 @@
-# Intro to React.js
+# Survey app
 
-## Reasons to use React
-* Fast
-* Modular
-* Scalable
-* Flexible
-* Popular
+## Technologies used
+- React
+- Redux
+- Mongo DB
+- Google OAuth
+- Heroku
 
-## JSX
-* A syntax extension for JavaScript. It has to be compiled in to JS before it can be read by the browser.
 
