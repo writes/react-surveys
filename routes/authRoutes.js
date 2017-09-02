@@ -5,10 +5,10 @@ module.exports = app => {
   app.get(
     '/auth/google',
     passport.authenticate('google', {
-      scope: ['profile', 'email']
+      scope: ['profile', 'email'],
     })
   );
 
-  // second route handler
+  // authenticate
   app.get('/auth/google/callback', passport.authenticate('google'));
 };
