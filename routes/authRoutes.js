@@ -11,4 +11,9 @@ module.exports = app => {
 
   // authenticate
   app.get('/auth/google/callback', passport.authenticate('google'));
+
+  // cookie request and response
+  app.get('/api/current_user', (req, res) => {
+    res.send(req.user);
+  });
 };
