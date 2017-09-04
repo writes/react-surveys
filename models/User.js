@@ -7,5 +7,3 @@ const userSchema = new Schema({
 });
 
 mongoose.model('users', userSchema);
-
-// No require statments to avoid
