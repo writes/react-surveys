@@ -4,7 +4,14 @@ class Header extends Component {
     return (
       <nav>
         <div className="nav-wrapper">
-          <h1>HEADER</h1>
+          <a className="left brand-logo">
+            Nav Link
+          </a>
+          <ul className="right">
+            <li>
+              <a href="#">Login with Google</a>
+            </li>
+          </ul>
         </div>
       </nav>
     )
