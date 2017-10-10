@@ -3,11 +3,13 @@
 // Dashboard
 // Survey Now
 import React from 'react';
-import { BrowserRoute, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
-const Header;
-const Dashboard;
-const ;
+import Header from './Header';
+const Dashboard = () => <h2>Dashboard</h2>;
+const SurveyNew = () => <h2>SurveyNew</h2>;
+const Landing = () => <h2>Landing</h2>;
+
 const App = () => {
   return (
     <div>
@@ -15,8 +17,8 @@ const App = () => {
         <div>
           <Header />
           <Route exact path="/" component={Landing} />
-          <Route exact path="/surveys" component={Dashboard}/>
-          <Route path="/surverys/new" component={SurveyNew}/>
+          <Route exact path="/surveys" component={Dashboard} />
+          <Route path="/surverys/new" component={SurveyNew} />
         </div>
       </BrowserRouter>
     </div>
