@@ -12,9 +12,9 @@ const Landing = () => <h2>Landing</h2>;
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <BrowserRouter>
-        <div>
+        <div>    
           <Header />
           <Route exact path="/" component={Landing} />
           <Route exact path="/surveys" component={Dashboard} />
