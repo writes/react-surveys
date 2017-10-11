@@ -1,7 +1,3 @@
-// Landing
-// HEader
-// Dashboard
-// Survey Now
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
