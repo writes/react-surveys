@@ -6,6 +6,6 @@ export const fetchUser = () => {
     return function(dispatch) {
         axios.get('/api/current_user')
         // wait for response from api and then dipatch action
-        .then(res => dispatch(({ type: FETCH_USER, payload: res })));
+        .then(res => dispatch({ type: FETCH_USER, payload: res }));
     };
 };
