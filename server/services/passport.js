@@ -18,21 +18,20 @@ passport.deserializeUser((id, done) => {
   });
 });
 
-//Create GoogleStrategy instance
+// GoogleStrategy instance
 // passport.use as generic register
 passport.use(
   new GoogleStrategy(
     {
-      //passport recognizes as 'google' during authenticate()
       clientID: keys.googleClientID,
       clientSecret: keys.googleClientSecret,
       callbackURL: '/auth/google/callback',
-      proxy: true,
+      proxy: true
     },
     async (accessToken, refreshToken, profile, done) => {
-      const existingUser = await User.findOne({ googleId: profile.id })
+      const existingUser = await User.findOne({ googleId: profile.id });
       if (existingUser) {
-        done(null, existingUser);
+        return done(null, existingUser);
       }
 
       const user = await new User({ googleId: profile.id }).save();
