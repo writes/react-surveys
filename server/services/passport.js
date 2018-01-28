@@ -15,6 +15,8 @@ passport.deserializeUser((id, done) => {
   });
 });
 
+// GoogleStrategy instance
+// passport.use as generic register
 passport.use(
   new GoogleStrategy(
     {
@@ -25,11 +27,7 @@ passport.use(
     },
     async (accessToken, refreshToken, profile, done) => {
       const existingUser = await User.findOne({ googleId: profile.id });
-<<<<<<< HEAD
-      
-=======
 
->>>>>>> a3670cd58de10aa4f4b2e72093818ef02bdf896d
       if (existingUser) {
         return done(null, existingUser);
       }
