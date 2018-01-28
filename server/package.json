@@ -1,7 +1,7 @@
 {
   "name": "survey-app",
   "version": "1.0.0",
-  "description": "## About me",
+  "description": "Survey Creation App",
   "main": "index.js",
   "engines": {
     "node": "8.1.1",
