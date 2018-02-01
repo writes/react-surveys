@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 class Header extends Component {
   renderContent() {
     switch (this.props.auth) {
       case null:
-        return 'Still deciding';
+        return;
       case false:
-        return 'not logged in';
+        return <li><a href="/auth/google">Login with Google</a></li>;
       default:
-        return "i'm logged in";
+        return <li><a href="/api/logout">Logout</a></li>;
     }
   }
   render() {
@@ -17,9 +18,12 @@ class Header extends Component {
         <nav>
           <div className="nav-wrapper">
             <div className="col s12">
-              <a className="left brand-logo">
-                Nav Link
-              </a>
+              <Link
+                to={this.props.auth ? '/surveys' : '/'}
+                className="left brand-logo"
+              >
+              HEADER
+              </Link>
               <ul className="right">
                 <li>
                   {this.renderContent()}
