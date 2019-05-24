@@ -2,3 +2,4 @@ node_modules
 dev.js
 .lock
 .DS_Store
+.idea
